@@ -20,11 +20,14 @@ img {
   height: 150px;
   border-radius: 50%;
 }
-.span {
-  color: pink
-}
 a {
   text-decoration: none;
   color: #FF3C00;
   text-shadow: 2px 2px 5px black;
+}
+pre {
+  background-color: #2e2e2e;
+  color: #ccc;
+  border: 1px solid #424242;
+  text-align: left;
 }
