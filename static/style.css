@@ -1,0 +1,30 @@
+body {
+  background-color: #1d1d1d;
+  color: white;
+  margin: 5;
+  font-family: monospace;
+}
+p, h3, li {
+  text-align: left;
+}
+ul {
+  list-style: none;
+  padding-left: 5;
+}
+.container {
+  width: 15%;
+  margin: auto;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.span {
+  color: pink
+}
+a {
+  text-decoration: none;
+  color: #FF3C00;
+  text-shadow: 2px 2px 5px black;
+}

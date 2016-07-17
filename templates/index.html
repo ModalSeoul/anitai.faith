@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>__future__ home of Anitai</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container" align="center">
+    <h3>Yo this project is currently dead</h3>
+    <p>But never fear yung homie. Anitai's development has taken a different route,
+      and will now be a private torrent-tracker for all you weeb pieces of shit.</p>
+    <img src="https://media.giphy.com/media/HRtgtXbZdc7MQ/giphy.gif">
+    <h3>What I'm doing right now</h3>
+    <p>Between work I'm writing the tools needed to run a private torrent-tracker.
+      The easiest way to keep up with me is to follow me on
+      <span>
+        <a href="https://github.com/ModalSeoul">Github</a>.
+      </span>
+      I also use <span><a href="https://twitter.com/ModalSeoul">Twitter</a></span>
+      way too much.
+    </p>
+
+    <h3>Torrents to hold you over</h3>
+      <p>Keep in mind I've only got one seedbox in service at the moment.
+        If you'd be so kind, please seed. It helps quite a bit.</p>
+      {% for torrent in torrents.torrents %}
+      <ul>
+        <li>
+          <a href="/torrent/{{loop.index0}}">{{torrent.title}}</a>
+          <li>Downloads: <span>{{torrent.downloads}}</span></li>
+        </li>
+      </ul>
+      {% endfor %}
+  </div>
+</body>
